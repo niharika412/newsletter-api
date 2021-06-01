@@ -1,0 +1,25 @@
+{
+  "name": "newsletter-api",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niharika412/newsletter-api.git"
+  },
+  "author": "niharika412",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/niharika412/newsletter-api/issues"
+  },
+  "homepage": "https://github.com/niharika412/newsletter-api#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
+}
