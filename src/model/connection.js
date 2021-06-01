@@ -1,30 +1,57 @@
 import mongoose from 'mongoose';
 
 const userSchema = mongoose.Schema({
-    userId:{type:String,unique:true},
-    password:{type:String, unique:true,required:true}
-},{collection:"newsletter-users", toObject:{versionKey:false}});
+    userId: { type: String, unique: true },
+    password: { type: String, unique: true, required: true }
+}, { collection: "newsletter-users", toObject: { versionKey: false } 
+});
 
-let collection={}
+
+const newsLetterSchema = mongoose.Schema({
+    hostName: {type: String, unique: true},
+    distributionList: [{
+        type:String
+    }]
+}, {
+    collection: "distribution-list", toObject: { versionKey: false }
+})
+
+let collection = {}
 
 const connectionOptions = {
-    useNewUrlParser:true,
+    useNewUrlParser: true,
     useUnifiedTopology: true,
-    useCreateIndex:true
+    useCreateIndex: true
 }
 const usersDBURL = 'mongodb://localhost:27017/NusersDB';
 
-collection.getNusersCollection= async()=>{
-    try{
-        let database= await mongoose.connect(usersDBURL,connectionOptions);
-        let userModel = await database.model('User',userSchema);
+collection.getNusersCollection = async () => {
+    try {
+        let database = await mongoose.connect(usersDBURL, connectionOptions);
+        let userModel = await database.model('User', userSchema);
         return userModel;
     }
-    catch(error){
+    catch (error) {
         let err = new Error("Could not connect to database");
-        err.status=500;
+        err.status = 500;
         throw err;
     }
 }
 
-export const collect=collection;
+const dlDBURL = 'mongodb://localhost:27017/distributionListDB';
+
+collection.getDistributionList = async ()=>{
+    try{
+        let db= await mongoose.connect(dlDBURL,connectionOptions);
+        let distList = await database.model('DL', newsLetterSchema);
+        return distList;
+    }
+    catch(error){
+        console.log(error)
+        let err = new Error("Could not connect to database");
+        err.status = 500;
+        throw err;
+    }
+}
+
+export const collect = collection;
