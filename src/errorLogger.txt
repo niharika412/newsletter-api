@@ -1,0 +1,194 @@
+Tue Jun 01 2021 16:04:27 GMT+0530 (India Standard Time)  -  ReferenceError: userService is not defined
+    at file:///D:/newsletter-api/newsletter-api/src/routes/routing.js:8:28
+    at Layer.handle [as handle_request] (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\layer.js:95:5)
+    at D:\newsletter-api\newsletter-api\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\index.js:317:13)
+    at D:\newsletter-api\newsletter-api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\index.js:275:10)
+    at file:///D:/newsletter-api/newsletter-api/src/utilities/requestLogger.js:6:14
+Tue Jun 01 2021 16:04:55 GMT+0530 (India Standard Time)  -  TypeError: userServices.registration is not a function
+    at file:///D:/newsletter-api/newsletter-api/src/routes/routing.js:8:47
+    at Layer.handle [as handle_request] (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\layer.js:95:5)
+    at D:\newsletter-api\newsletter-api\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\index.js:317:13)
+    at D:\newsletter-api\newsletter-api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\index.js:275:10)
+    at file:///D:/newsletter-api/newsletter-api/src/utilities/requestLogger.js:6:14
+Tue Jun 01 2021 16:05:21 GMT+0530 (India Standard Time)  -  TypeError: dbLayer.register is not a function
+    at Object.services.register (file:///D:/newsletter-api/newsletter-api/src/services/userService.js:7:37)
+    at file:///D:/newsletter-api/newsletter-api/src/routes/routing.js:8:47
+    at Layer.handle [as handle_request] (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\layer.js:95:5)
+    at D:\newsletter-api\newsletter-api\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\index.js:317:13)
+    at D:\newsletter-api\newsletter-api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\index.js:275:10)
+Tue Jun 01 2021 16:06:23 GMT+0530 (India Standard Time)  -  TypeError: dbLayer.registration is not a function
+    at Object.services.register (file:///D:/newsletter-api/newsletter-api/src/services/userService.js:7:37)
+    at file:///D:/newsletter-api/newsletter-api/src/routes/routing.js:8:47
+    at Layer.handle [as handle_request] (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\layer.js:95:5)
+    at D:\newsletter-api\newsletter-api\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\index.js:317:13)
+    at D:\newsletter-api\newsletter-api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\index.js:275:10)
+Tue Jun 01 2021 16:07:45 GMT+0530 (India Standard Time)  -  TypeError: collect.registration is not a function
+    at Object.services.register (file:///D:/newsletter-api/newsletter-api/src/services/userService.js:7:37)
+    at file:///D:/newsletter-api/newsletter-api/src/routes/routing.js:8:47
+    at Layer.handle [as handle_request] (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\layer.js:95:5)
+    at D:\newsletter-api\newsletter-api\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\index.js:317:13)
+    at D:\newsletter-api\newsletter-api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\index.js:275:10)
+Tue Jun 01 2021 16:08:56 GMT+0530 (India Standard Time)  -  TypeError: User.registration is not a function
+    at Object.services.register (file:///D:/newsletter-api/newsletter-api/src/services/userService.js:7:34)
+    at file:///D:/newsletter-api/newsletter-api/src/routes/routing.js:8:47
+    at Layer.handle [as handle_request] (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\layer.js:95:5)
+    at D:\newsletter-api\newsletter-api\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\index.js:317:13)
+    at D:\newsletter-api\newsletter-api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\index.js:275:10)
+Tue Jun 01 2021 16:09:15 GMT+0530 (India Standard Time)  -  ReferenceError: added is not defined
+    at Object.user.register (file:///D:/newsletter-api/newsletter-api/src/model/users.js:16:5)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Object.services.register (file:///D:/newsletter-api/newsletter-api/src/services/userService.js:7:23)
+    at async file:///D:/newsletter-api/newsletter-api/src/routes/routing.js:8:28
+Tue Jun 01 2021 16:10:01 GMT+0530 (India Standard Time)  -  MongoError: E11000 duplicate key error collection: NusersDB.newsletter-users index: userId_1 dup key: { userId: "1001" }
+    at Function.create (D:\newsletter-api\newsletter-api\node_modules\mongodb\lib\core\error.js:57:12)
+    at toError (D:\newsletter-api\newsletter-api\node_modules\mongodb\lib\utils.js:130:22)
+    at D:\newsletter-api\newsletter-api\node_modules\mongodb\lib\operations\common_functions.js:258:39
+    at handler (D:\newsletter-api\newsletter-api\node_modules\mongodb\lib\core\sdam\topology.js:943:24)
+    at D:\newsletter-api\newsletter-api\node_modules\mongodb\lib\cmap\connection_pool.js:350:13
+    at handleOperationResult (D:\newsletter-api\newsletter-api\node_modules\mongodb\lib\core\sdam\server.js:558:5)
+    at MessageStream.messageHandler (D:\newsletter-api\newsletter-api\node_modules\mongodb\lib\cmap\connection.js:281:5)
+    at MessageStream.emit (events.js:315:20)
+    at processIncomingData (D:\newsletter-api\newsletter-api\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (D:\newsletter-api\newsletter-api\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at writeOrBuffer (_stream_writable.js:352:12)
+    at MessageStream.Writable.write (_stream_writable.js:303:10)
+    at Socket.ondata (_stream_readable.js:719:22)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:309:12)
+    at readableAddChunk (_stream_readable.js:284:9)
+Tue Jun 01 2021 16:10:13 GMT+0530 (India Standard Time)  -  MongoError: E11000 duplicate key error collection: NusersDB.newsletter-users index: password_1 dup key: { password: null }
+    at Function.create (D:\newsletter-api\newsletter-api\node_modules\mongodb\lib\core\error.js:57:12)
+    at toError (D:\newsletter-api\newsletter-api\node_modules\mongodb\lib\utils.js:130:22)
+    at D:\newsletter-api\newsletter-api\node_modules\mongodb\lib\operations\common_functions.js:258:39
+    at handler (D:\newsletter-api\newsletter-api\node_modules\mongodb\lib\core\sdam\topology.js:943:24)
+    at D:\newsletter-api\newsletter-api\node_modules\mongodb\lib\cmap\connection_pool.js:350:13
+    at handleOperationResult (D:\newsletter-api\newsletter-api\node_modules\mongodb\lib\core\sdam\server.js:558:5)
+    at MessageStream.messageHandler (D:\newsletter-api\newsletter-api\node_modules\mongodb\lib\cmap\connection.js:281:5)
+    at MessageStream.emit (events.js:315:20)
+    at processIncomingData (D:\newsletter-api\newsletter-api\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (D:\newsletter-api\newsletter-api\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at writeOrBuffer (_stream_writable.js:352:12)
+    at MessageStream.Writable.write (_stream_writable.js:303:10)
+    at Socket.ondata (_stream_readable.js:719:22)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:309:12)
+    at readableAddChunk (_stream_readable.js:284:9)
+Tue Jun 01 2021 16:10:47 GMT+0530 (India Standard Time)  -  ValidationError: User validation failed: password: Path `password` is required.
+    at model.Document.invalidate (D:\newsletter-api\newsletter-api\node_modules\mongoose\lib\document.js:2729:32)
+    at D:\newsletter-api\newsletter-api\node_modules\mongoose\lib\document.js:2541:17
+    at D:\newsletter-api\newsletter-api\node_modules\mongoose\lib\schematype.js:1255:9
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+Tue Jun 01 2021 16:11:02 GMT+0530 (India Standard Time)  -  ReferenceError: loggedin is not defined
+    at Object.services.register (file:///D:/newsletter-api/newsletter-api/src/services/userService.js:8:5)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async file:///D:/newsletter-api/newsletter-api/src/routes/routing.js:8:28
+Tue Jun 01 2021 16:11:25 GMT+0530 (India Standard Time)  -  MongoError: E11000 duplicate key error collection: NusersDB.newsletter-users index: password_1 dup key: { password: "hey" }
+    at Function.create (D:\newsletter-api\newsletter-api\node_modules\mongodb\lib\core\error.js:57:12)
+    at toError (D:\newsletter-api\newsletter-api\node_modules\mongodb\lib\utils.js:130:22)
+    at D:\newsletter-api\newsletter-api\node_modules\mongodb\lib\operations\common_functions.js:258:39
+    at handler (D:\newsletter-api\newsletter-api\node_modules\mongodb\lib\core\sdam\topology.js:943:24)
+    at D:\newsletter-api\newsletter-api\node_modules\mongodb\lib\cmap\connection_pool.js:350:13
+    at handleOperationResult (D:\newsletter-api\newsletter-api\node_modules\mongodb\lib\core\sdam\server.js:558:5)
+    at MessageStream.messageHandler (D:\newsletter-api\newsletter-api\node_modules\mongodb\lib\cmap\connection.js:281:5)
+    at MessageStream.emit (events.js:315:20)
+    at processIncomingData (D:\newsletter-api\newsletter-api\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (D:\newsletter-api\newsletter-api\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at writeOrBuffer (_stream_writable.js:352:12)
+    at MessageStream.Writable.write (_stream_writable.js:303:10)
+    at Socket.ondata (_stream_readable.js:719:22)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:309:12)
+    at readableAddChunk (_stream_readable.js:284:9)
+Tue Jun 01 2021 16:12:03 GMT+0530 (India Standard Time)  -  TypeError: User.loggedin is not a function
+    at Object.services.login (file:///D:/newsletter-api/newsletter-api/src/services/userService.js:12:34)
+    at file:///D:/newsletter-api/newsletter-api/src/routes/routing.js:20:40
+    at Layer.handle [as handle_request] (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\layer.js:95:5)
+    at D:\newsletter-api\newsletter-api\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\index.js:317:13)
+    at D:\newsletter-api\newsletter-api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\index.js:275:10)
+Tue Jun 01 2021 16:12:34 GMT+0530 (India Standard Time)  -  ReferenceError: usersDB is not defined
+    at Object.user.login (file:///D:/newsletter-api/newsletter-api/src/model/users.js:26:20)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Object.services.login (file:///D:/newsletter-api/newsletter-api/src/services/userService.js:12:23)
+    at async file:///D:/newsletter-api/newsletter-api/src/routes/routing.js:20:21
+Tue Jun 01 2021 16:13:03 GMT+0530 (India Standard Time)  -  ReferenceError: checkUser is not defined
+    at Object.user.login (file:///D:/newsletter-api/newsletter-api/src/model/users.js:27:5)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Object.services.login (file:///D:/newsletter-api/newsletter-api/src/services/userService.js:12:23)
+    at async file:///D:/newsletter-api/newsletter-api/src/routes/routing.js:20:21
