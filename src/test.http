@@ -6,3 +6,26 @@ Content-Type: application/json
     "userId":"102",
     "password":"hi"
 }
+
+###
+
+POST http://localhost:3000/hostEmail
+Content-Type: application/json
+
+{
+    "hostName":"louise@gmail.com",
+    "distributionList":["matthias@gmail.com","pierre@gmail.com"]
+}
+
+###
+
+GET http://localhost:3000/distributionList
+Content-Type: application/json
+
+{
+    "hostName":"ryan.dupont@gmail.com"
+}
+
+###
+
+PUT http://localhost:3000/customers/scott.morton@yahoo.com/ryan.dupont@gmail.com

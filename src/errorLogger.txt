@@ -220,3 +220,133 @@ Tue Jun 01 2021 21:06:50 GMT+0530 (India Standard Time)  -  Error: Could not con
     at async Object.dlServices.setHost (file:///D:/newsletter-api/newsletter-api/src/model/distList.js:6:18)
     at async Object.dlservices.setHost (file:///D:/newsletter-api/newsletter-api/src/services/distListService.js:7:14)
     at async file:///D:/newsletter-api/newsletter-api/src/routes/routing.js:34:23
+Wed Jun 02 2021 20:04:48 GMT+0530 (India Standard Time)  -  Error: Could not connect to database
+    at Object.collection.getDistributionList (file:///D:/newsletter-api/newsletter-api/src/model/connection.js:51:19)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Object.dlServices.setHost (file:///D:/newsletter-api/newsletter-api/src/model/distList.js:6:18)
+    at async Object.dlservices.setHost (file:///D:/newsletter-api/newsletter-api/src/services/distListService.js:7:14)
+    at async file:///D:/newsletter-api/newsletter-api/src/routes/routing.js:34:23
+Wed Jun 02 2021 20:06:51 GMT+0530 (India Standard Time)  -  Error: Could not connect to database
+    at Object.collection.getDistributionList (file:///D:/newsletter-api/newsletter-api/src/model/connection.js:50:19)
+    at Object.dlServices.setHost (file:///D:/newsletter-api/newsletter-api/src/model/distList.js:6:32)
+    at Object.dlservices.setHost (file:///D:/newsletter-api/newsletter-api/src/services/distListService.js:7:45)
+    at file:///D:/newsletter-api/newsletter-api/src/routes/routing.js:34:40
+    at Layer.handle [as handle_request] (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\layer.js:95:5)
+    at D:\newsletter-api\newsletter-api\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\newsletter-api\newsletter-api\node_modules\express\lib\router\index.js:317:13)
+    at D:\newsletter-api\newsletter-api\node_modules\express\lib\router\index.js:284:7
+Wed Jun 02 2021 20:07:29 GMT+0530 (India Standard Time)  -  Error: Could not connect to database
+    at Object.collection.getDistributionList (file:///D:/newsletter-api/newsletter-api/src/model/connection.js:50:19)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Object.dlServices.setHost (file:///D:/newsletter-api/newsletter-api/src/model/distList.js:6:18)
+    at async Object.dlservices.setHost (file:///D:/newsletter-api/newsletter-api/src/services/distListService.js:7:14)
+    at async file:///D:/newsletter-api/newsletter-api/src/routes/routing.js:34:23
+Wed Jun 02 2021 20:16:18 GMT+0530 (India Standard Time)  -  MongoError: E11000 duplicate key error collection: NusersDB.distribution-list index: hostName_1 dup key: { hostName: "maxence@gmail.com" }
+    at Function.create (D:\newsletter-api\newsletter-api\node_modules\mongodb\lib\core\error.js:57:12)
+    at toError (D:\newsletter-api\newsletter-api\node_modules\mongodb\lib\utils.js:130:22)
+    at D:\newsletter-api\newsletter-api\node_modules\mongodb\lib\operations\common_functions.js:258:39
+    at handler (D:\newsletter-api\newsletter-api\node_modules\mongodb\lib\core\sdam\topology.js:943:24)
+    at D:\newsletter-api\newsletter-api\node_modules\mongodb\lib\cmap\connection_pool.js:350:13
+    at handleOperationResult (D:\newsletter-api\newsletter-api\node_modules\mongodb\lib\core\sdam\server.js:558:5)
+    at MessageStream.messageHandler (D:\newsletter-api\newsletter-api\node_modules\mongodb\lib\cmap\connection.js:281:5)
+    at MessageStream.emit (events.js:315:20)
+    at processIncomingData (D:\newsletter-api\newsletter-api\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (D:\newsletter-api\newsletter-api\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at writeOrBuffer (_stream_writable.js:352:12)
+    at MessageStream.Writable.write (_stream_writable.js:303:10)
+    at Socket.ondata (_stream_readable.js:719:22)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:309:12)
+    at readableAddChunk (_stream_readable.js:284:9)
+Wed Jun 02 2021 20:19:03 GMT+0530 (India Standard Time)  -  SyntaxError: Unexpected token } in JSON at position 40
+    at JSON.parse (<anonymous>)
+    at parse (D:\newsletter-api\newsletter-api\node_modules\body-parser\lib\types\json.js:89:19)
+    at D:\newsletter-api\newsletter-api\node_modules\body-parser\lib\read.js:121:18
+    at invokeCallback (D:\newsletter-api\newsletter-api\node_modules\raw-body\index.js:224:16)
+    at done (D:\newsletter-api\newsletter-api\node_modules\raw-body\index.js:213:7)
+    at IncomingMessage.onEnd (D:\newsletter-api\newsletter-api\node_modules\raw-body\index.js:273:7)
+    at IncomingMessage.emit (events.js:327:22)
+    at endReadableNT (_stream_readable.js:1327:12)
+    at processTicksAndRejections (internal/process/task_queues.js:80:21)
+Wed Jun 02 2021 20:19:48 GMT+0530 (India Standard Time)  -  SyntaxError: Unexpected token } in JSON at position 40
+    at JSON.parse (<anonymous>)
+    at parse (D:\newsletter-api\newsletter-api\node_modules\body-parser\lib\types\json.js:89:19)
+    at D:\newsletter-api\newsletter-api\node_modules\body-parser\lib\read.js:121:18
+    at invokeCallback (D:\newsletter-api\newsletter-api\node_modules\raw-body\index.js:224:16)
+    at done (D:\newsletter-api\newsletter-api\node_modules\raw-body\index.js:213:7)
+    at IncomingMessage.onEnd (D:\newsletter-api\newsletter-api\node_modules\raw-body\index.js:273:7)
+    at IncomingMessage.emit (events.js:327:22)
+    at endReadableNT (_stream_readable.js:1327:12)
+    at processTicksAndRejections (internal/process/task_queues.js:80:21)
+Wed Jun 02 2021 20:20:01 GMT+0530 (India Standard Time)  -  SyntaxError: Unexpected token } in JSON at position 39
+    at JSON.parse (<anonymous>)
+    at parse (D:\newsletter-api\newsletter-api\node_modules\body-parser\lib\types\json.js:89:19)
+    at D:\newsletter-api\newsletter-api\node_modules\body-parser\lib\read.js:121:18
+    at invokeCallback (D:\newsletter-api\newsletter-api\node_modules\raw-body\index.js:224:16)
+    at done (D:\newsletter-api\newsletter-api\node_modules\raw-body\index.js:213:7)
+    at IncomingMessage.onEnd (D:\newsletter-api\newsletter-api\node_modules\raw-body\index.js:273:7)
+    at IncomingMessage.emit (events.js:327:22)
+    at endReadableNT (_stream_readable.js:1327:12)
+    at processTicksAndRejections (internal/process/task_queues.js:80:21)
+Wed Jun 02 2021 20:21:14 GMT+0530 (India Standard Time)  -  SyntaxError: Unexpected token } in JSON at position 39
+    at JSON.parse (<anonymous>)
+    at parse (D:\newsletter-api\newsletter-api\node_modules\body-parser\lib\types\json.js:89:19)
+    at D:\newsletter-api\newsletter-api\node_modules\body-parser\lib\read.js:121:18
+    at invokeCallback (D:\newsletter-api\newsletter-api\node_modules\raw-body\index.js:224:16)
+    at done (D:\newsletter-api\newsletter-api\node_modules\raw-body\index.js:213:7)
+    at IncomingMessage.onEnd (D:\newsletter-api\newsletter-api\node_modules\raw-body\index.js:273:7)
+    at IncomingMessage.emit (events.js:327:22)
+    at endReadableNT (_stream_readable.js:1327:12)
+    at processTicksAndRejections (internal/process/task_queues.js:80:21)
+Wed Jun 02 2021 20:21:41 GMT+0530 (India Standard Time)  -  SyntaxError: Unexpected token } in JSON at position 39
+    at JSON.parse (<anonymous>)
+    at parse (D:\newsletter-api\newsletter-api\node_modules\body-parser\lib\types\json.js:89:19)
+    at D:\newsletter-api\newsletter-api\node_modules\body-parser\lib\read.js:121:18
+    at invokeCallback (D:\newsletter-api\newsletter-api\node_modules\raw-body\index.js:224:16)
+    at done (D:\newsletter-api\newsletter-api\node_modules\raw-body\index.js:213:7)
+    at IncomingMessage.onEnd (D:\newsletter-api\newsletter-api\node_modules\raw-body\index.js:273:7)
+    at IncomingMessage.emit (events.js:327:22)
+    at endReadableNT (_stream_readable.js:1327:12)
+    at processTicksAndRejections (internal/process/task_queues.js:80:21)
+Wed Jun 02 2021 20:32:34 GMT+0530 (India Standard Time)  -  SyntaxError: Unexpected token } in JSON at position 39
+    at JSON.parse (<anonymous>)
+    at parse (D:\newsletter-api\newsletter-api\node_modules\body-parser\lib\types\json.js:89:19)
+    at D:\newsletter-api\newsletter-api\node_modules\body-parser\lib\read.js:121:18
+    at invokeCallback (D:\newsletter-api\newsletter-api\node_modules\raw-body\index.js:224:16)
+    at done (D:\newsletter-api\newsletter-api\node_modules\raw-body\index.js:213:7)
+    at IncomingMessage.onEnd (D:\newsletter-api\newsletter-api\node_modules\raw-body\index.js:273:7)
+    at IncomingMessage.emit (events.js:327:22)
+    at endReadableNT (_stream_readable.js:1327:12)
+    at processTicksAndRejections (internal/process/task_queues.js:80:21)
+Wed Jun 02 2021 20:40:23 GMT+0530 (India Standard Time)  -  SyntaxError: Unexpected token } in JSON at position 39
+    at JSON.parse (<anonymous>)
+    at parse (D:\newsletter-api\newsletter-api\node_modules\body-parser\lib\types\json.js:89:19)
+    at D:\newsletter-api\newsletter-api\node_modules\body-parser\lib\read.js:121:18
+    at invokeCallback (D:\newsletter-api\newsletter-api\node_modules\raw-body\index.js:224:16)
+    at done (D:\newsletter-api\newsletter-api\node_modules\raw-body\index.js:213:7)
+    at IncomingMessage.onEnd (D:\newsletter-api\newsletter-api\node_modules\raw-body\index.js:273:7)
+    at IncomingMessage.emit (events.js:327:22)
+    at endReadableNT (_stream_readable.js:1327:12)
+    at processTicksAndRejections (internal/process/task_queues.js:80:21)
+Wed Jun 02 2021 20:40:47 GMT+0530 (India Standard Time)  -  SyntaxError: Unexpected token } in JSON at position 39
+    at JSON.parse (<anonymous>)
+    at parse (D:\newsletter-api\newsletter-api\node_modules\body-parser\lib\types\json.js:89:19)
+    at D:\newsletter-api\newsletter-api\node_modules\body-parser\lib\read.js:121:18
+    at invokeCallback (D:\newsletter-api\newsletter-api\node_modules\raw-body\index.js:224:16)
+    at done (D:\newsletter-api\newsletter-api\node_modules\raw-body\index.js:213:7)
+    at IncomingMessage.onEnd (D:\newsletter-api\newsletter-api\node_modules\raw-body\index.js:273:7)
+    at IncomingMessage.emit (events.js:327:22)
+    at endReadableNT (_stream_readable.js:1327:12)
+    at processTicksAndRejections (internal/process/task_queues.js:80:21)
+Wed Jun 02 2021 20:50:43 GMT+0530 (India Standard Time)  -  CastError: Cast to [string] failed for value "[{"$push":"louise@gmail.com"}]" (type string) at path "distributionList.0"
+    at model.Query.exec (D:\newsletter-api\newsletter-api\node_modules\mongoose\lib\query.js:4473:21)
+    at model.Query.Query.then (D:\newsletter-api\newsletter-api\node_modules\mongoose\lib\query.js:4567:15)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
