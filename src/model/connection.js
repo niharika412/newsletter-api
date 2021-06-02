@@ -38,12 +38,11 @@ collection.getNusersCollection = async () => {
     }
 }
 
-const dlDBURL = 'mongodb://localhost:27017/distributionListDB';
 
 collection.getDistributionList = async ()=>{
     try{
-        let db= await mongoose.connect(dlDBURL,connectionOptions);
-        let distList = await database.model('DL', newsLetterSchema);
+        let db= await mongoose.connect(usersDBURL,connectionOptions);
+        let distList = await db.model('DL', newsLetterSchema);
         return distList;
     }
     catch(error){
