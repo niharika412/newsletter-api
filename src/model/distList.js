@@ -18,7 +18,7 @@ dlServices.getDL = async(hostObj)=>{
     let distL = await distDB.findOne({"hostName":hostObj.hostName},{_id:0})
     if(distL) return distL;
     else{
-        let err= new Error("Some error occured");
+        let err= new Error("No such account in the database");
         err.status = 500;
         throw err;
     }
@@ -29,10 +29,35 @@ dlServices.addToDL = async(mailID,host)=>{
     let added = await distDB.updateOne({"hostName":host},{$push:{"distributionList":mailID}});
     if(added) return added;
     else{
-        let err= new Error("Some error occured");
+        let err= new Error("Some error occurred");
         err.status = 500;
         throw err;
     }
 }
+
+
+dlServices.updateHost = async(oldHost, newHost)=>{
+    let distDB = await collect.getDistributionList();
+    let updated = await distDB.updateOne({"hostName":oldHost},{$set:{"hostName":newHost}})
+    if(updated.n==1) return updated;
+    else{
+        let err = new Error("Record not found");
+        err.status = 500;
+        throw err;
+    }
+}
+
+dlServices.deleteDL = async(hostName)=>{
+    let distDB = await collect.getDistributionList();
+    let deleted = await distDB.deleteOne({"hostName":hostName});
+    if(deleted.n==1) return deleted;
+    else{
+        let err = new Error("Record not found");
+        err.status = 500;
+        throw err;
+    }
+
+}
+
 
 export const distributionListServices=dlServices;

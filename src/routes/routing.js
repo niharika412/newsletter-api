@@ -63,4 +63,29 @@ router.put("/customers/:customerID/:host",async(req,res,next)=>{
         next(er);
     }
 })
+
+
+router.put("/hostNames/:oldHost/:newHost", async(req,res,next)=>{
+    try{
+        let oldHost = req.params.oldHost;
+        let newHost = req.params.newHost;
+        let updateHost = await dLServices.updateHost(oldHost,newHost);
+        if(updateHost) return res.json(updateHost)
+    }
+    catch(er){
+        next(er);
+    }
+})
+
+router.delete("/record/:host", async(req,res,next)=>{
+    try{
+        let host = req.params.host;
+        let delRecord = await dLServices.delDL(host);
+        if(delRecord) return res.json(delRecord)
+    }
+    catch(er){
+        next(er);
+    }
+})
+
 export const Router = router;
