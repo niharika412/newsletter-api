@@ -36,3 +36,17 @@ PUT http://localhost:3000/hostNames/ryan.dupont@gmail.com/mercy.pote@gmail.com
 
 ###
 DELETE http://localhost:3000/record/nikk@gmail.com
+
+###
+
+PUT http://localhost:3000/newsletter
+Content-Type: application/json
+
+{
+    "userCreds":{
+        "user": "contact.reesoi@gmail.com",
+    "pass": "Soiree219"
+    },
+    "target":["niharikapandit219@gmail.com","niharikap219@gmail.com"],
+    "text":"Fire drill !"
+}

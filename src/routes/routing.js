@@ -1,6 +1,7 @@
 import * as express from 'express';
 import {userServices} from '../services/userService.js';
 import {dLServices} from '../services/distListService.js';
+import {mailService} from '../services/mailService.js';
 
 const router= express.Router();
 
@@ -82,6 +83,20 @@ router.delete("/record/:host", async(req,res,next)=>{
         let host = req.params.host;
         let delRecord = await dLServices.delDL(host);
         if(delRecord) return res.json(delRecord)
+    }
+    catch(er){
+        next(er);
+    }
+})
+
+
+router.put("/newsletter", async(req,res,next)=>{
+    try{
+        let userCreds= req.body.userCreds;
+        let text = req.body.text;
+        let target = req.body.target;
+        let sendEmail = await mailService.sendEmail(userCreds,target,text);
+        if(sendEmail) return res.json(sendEmail);
     }
     catch(er){
         next(er);
