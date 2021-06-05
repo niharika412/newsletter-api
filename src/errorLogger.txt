@@ -439,3 +439,23 @@ Sat Jun 05 2021 20:25:47 GMT+0530 (India Standard Time)  -  ReferenceError: info
     at Object.mailingService.sendEmail (file:///D:/newsletter-api/newsletter-api/src/services/mailService.js:16:5)
     at file:///D:/newsletter-api/newsletter-api/src/routes/routing.js:99:47
     at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Sat Jun 05 2021 20:42:23 GMT+0530 (India Standard Time)  -  Error: Record not found
+    at Object.dlServices.deleteDL (file:///D:/newsletter-api/newsletter-api/src/model/distList.js:55:19)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Object.dlservices.delDL (file:///D:/newsletter-api/newsletter-api/src/services/distListService.js:34:21)
+    at async file:///D:/newsletter-api/newsletter-api/src/routes/routing.js:84:25
+Sat Jun 05 2021 20:43:16 GMT+0530 (India Standard Time)  -  ReferenceError: getDL is not defined
+    at Object.dlServices.delCustomer (file:///D:/newsletter-api/newsletter-api/src/model/distList.js:64:23)
+    at async Object.dlservices.deleteCustomer (file:///D:/newsletter-api/newsletter-api/src/services/distListService.js:23:18)
+    at async file:///D:/newsletter-api/newsletter-api/src/routes/routing.js:114:27
+Sat Jun 05 2021 20:44:26 GMT+0530 (India Standard Time)  -  Error: No such account in the database
+    at Object.dlServices.getDL (file:///D:/newsletter-api/newsletter-api/src/model/distList.js:21:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Object.dlServices.delCustomer (file:///D:/newsletter-api/newsletter-api/src/model/distList.js:64:23)
+    at async Object.dlservices.deleteCustomer (file:///D:/newsletter-api/newsletter-api/src/services/distListService.js:23:18)
+    at async file:///D:/newsletter-api/newsletter-api/src/routes/routing.js:114:27
+Sat Jun 05 2021 20:45:35 GMT+0530 (India Standard Time)  -  Error: No such email in distribution list
+    at Object.dlServices.delCustomer (file:///D:/newsletter-api/newsletter-api/src/model/distList.js:68:19)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Object.dlservices.deleteCustomer (file:///D:/newsletter-api/newsletter-api/src/services/distListService.js:23:18)
+    at async file:///D:/newsletter-api/newsletter-api/src/routes/routing.js:114:27

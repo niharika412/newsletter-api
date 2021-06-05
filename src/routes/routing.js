@@ -82,7 +82,7 @@ router.delete("/record/:host", async(req,res,next)=>{
     try{
         let host = req.params.host;
         let delRecord = await dLServices.delDL(host);
-        if(delRecord) return res.json(delRecord)
+        if(delRecord) return res.json({"message":"Deletion successful"})
     }
     catch(er){
         next(er);
@@ -102,6 +102,19 @@ router.put("/newsletter", async(req,res,next)=>{
         else return res.json(getDL)
     }
     catch(er){
+        next(er);
+    }
+})
+
+
+router.delete("/customer/:host/:customer",async(req,res,next)=>{
+    try{
+        let host = req.params.host;
+        let customer = req.params.customer;
+        let updatedHost = await dLServices.deleteCustomer(host,customer);
+        if(updatedHost) return res.json({"message":"Record Deletion successful"})
+    }
+    catch(er) {
         next(er);
     }
 })

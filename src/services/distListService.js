@@ -19,6 +19,11 @@ dlservices.updateCustomers = async(customerID,host)=>{
     if (updateReq) return updateReq;
 }
 
+dlservices.deleteCustomer = async(host,customerID)=>{
+    let delReq = await distributionListServices.delCustomer(host,customerID);
+    if(delReq) return delReq;
+}
+
 
 dlservices.updateHost = async (old,newH)=>{
     let updateReqHost = await distributionListServices.updateHost(old,newH);

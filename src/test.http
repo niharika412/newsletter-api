@@ -23,7 +23,7 @@ Content-Type: application/json
 
 {
     "hostName":"contact.reesoi@gmail.com",
-    "distributionList":["niharikap219@gmail.com"]
+    "distributionList":["niharikap219@gmail.com","hi@gmail.com"]
 }
 
 ###
@@ -32,7 +32,7 @@ GET http://localhost:3000/distributionList
 Content-Type: application/json
 
 {
-    "hostName":"contact.reeso@gmail.com"
+    "hostName":"contact.reesoi@gmail.com"
 }
 
 ###
@@ -54,7 +54,11 @@ Content-Type: application/json
 {
     "userCreds":{
         "user": "contact.reesoi@gmail.com",
-        "pass": "Soiree219"
+        "pass": "#"
     },
     "text":""
 }
+
+###
+
+DELETE http://localhost:3000/customer/contact.reesoi@gmail.com/hi@gmail.com
