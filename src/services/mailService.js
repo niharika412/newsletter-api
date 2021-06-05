@@ -12,14 +12,9 @@ mailingService.sendEmail = async (userCreds,target,emailText)=>{
         to:target,
         text:emailText
     }
-    let transport = await transporter.sendMail(mailOptions, function(error,info){
-        if (error) {
-            console.log(error);
-          } else {
-            console.log('Email sent: ' + info.response);
-          }
-    })
-    if(transport) return transport;
+    let info = transporter.sendMail(mailOptions)
+    if(!info) return next(new Error("Could not send email"))
+    return 'Email sent: ' + (await info).response;
 
 }
 

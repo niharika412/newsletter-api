@@ -94,9 +94,12 @@ router.put("/newsletter", async(req,res,next)=>{
     try{
         let userCreds= req.body.userCreds;
         let text = req.body.text;
-        let target = req.body.target;
-        let sendEmail = await mailService.sendEmail(userCreds,target,text);
-        if(sendEmail) return res.json(sendEmail);
+        let getDL = await dLServices.getDL({"hostName":userCreds.user});
+        if(!getDL.message){
+            let sendEmail = await mailService.sendEmail(userCreds,getDL.distributionList,text);
+            if(sendEmail) return res.json(sendEmail);
+        }
+        else return res.json(getDL)
     }
     catch(er){
         next(er);

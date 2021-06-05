@@ -16,6 +16,15 @@ Content-Type: application/json
     "hostName":"nikk@gmail.com",
     "distributionList":["thomas@gmail.com","camille@gmail.com"]
 }
+###
+
+POST http://localhost:3000/hostEmail
+Content-Type: application/json
+
+{
+    "hostName":"contact.reesoi@gmail.com",
+    "distributionList":["niharikap219@gmail.com"]
+}
 
 ###
 
@@ -23,7 +32,7 @@ GET http://localhost:3000/distributionList
 Content-Type: application/json
 
 {
-    "hostName":"ryan.dupont@gmail.com"
+    "hostName":"contact.reeso@gmail.com"
 }
 
 ###
@@ -35,7 +44,7 @@ PUT http://localhost:3000/customers/scott.morton@yahoo.com/ryan.dupont@gmail.com
 PUT http://localhost:3000/hostNames/ryan.dupont@gmail.com/mercy.pote@gmail.com
 
 ###
-DELETE http://localhost:3000/record/nikk@gmail.com
+DELETE http://localhost:3000/record/contact.reesoi@gmail.com
 
 ###
 
@@ -45,8 +54,7 @@ Content-Type: application/json
 {
     "userCreds":{
         "user": "contact.reesoi@gmail.com",
-    "pass": "Soiree219"
+        "pass": "Soiree219"
     },
-    "target":["niharikapandit219@gmail.com","niharikap219@gmail.com"],
-    "text":"Fire drill !"
+    "text":""
 }
