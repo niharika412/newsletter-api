@@ -54,9 +54,9 @@ Content-Type: application/json
 {
     "userCreds":{
         "user": "contact.reesoi@gmail.com",
-        "pass": "#"
+        "pass": "Soiree219"
     },
-    "text":""
+    "text":"./seraphina.txt"
 }
 
 ###
