@@ -10,7 +10,7 @@ formservice.sendFileAccToForm = async(keyword,target)=>{
             service:'gmail',
             auth:{
                 "user":"contact.reesoi@gmail.com",
-                "pass":"Soiree219"
+                "pass":"#"
             }
         })
         let mailOptions = {
@@ -28,7 +28,7 @@ formservice.sendFileAccToForm = async(keyword,target)=>{
             service:'gmail',
             auth:{
                 "user":"contact.reesoi@gmail.com",
-                "pass":"Soiree219"
+                "pass":"#"
             }
         })
         let mailOptions = {
@@ -46,7 +46,7 @@ formservice.sendFileAccToForm = async(keyword,target)=>{
             service:'gmail',
             auth:{
                 "user":"contact.reesoi@gmail.com",
-                "pass":"Soiree219"
+                "pass":"#"
             }
         })
         let mailOptions = {
