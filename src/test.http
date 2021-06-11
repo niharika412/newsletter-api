@@ -62,3 +62,12 @@ Content-Type: application/json
 ###
 
 DELETE http://localhost:3000/customer/contact.reesoi@gmail.com/hi@gmail.com
+
+###
+
+GET  http://localhost:3000/formEmail/niharikap219@gmail.com 
+Content-Type: application/json
+
+{
+    "keyword":"No Action"
+}

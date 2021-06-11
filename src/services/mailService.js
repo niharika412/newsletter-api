@@ -9,14 +9,14 @@ mailingService.sendEmail = async (userCreds,target,emailTextPath)=>{
         auth:userCreds
     })
     let textRead = await mailingService.getFile(emailTextPath);
-    console.log(textRead)
+    // console.log(textRead)
     let mailOptions = {
         from: userCreds.user,
         to:target,
         text:textRead
     }
-    let info = transporter.sendMail(mailOptions)
-    if(!info) return next(new Error("Could not send email"))
+    let info = transporter.sendMail(mailOptions);
+    if(!info) return next(new Error("Could not send email"));
     return 'Email sent: ' + (await info).response;
 
 }

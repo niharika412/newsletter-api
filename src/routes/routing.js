@@ -2,6 +2,7 @@ import * as express from 'express';
 import {userServices} from '../services/userService.js';
 import {dLServices} from '../services/distListService.js';
 import {mailService} from '../services/mailService.js';
+import {formService} from '../services/formService.js';
 
 const router= express.Router();
 
@@ -115,6 +116,19 @@ router.delete("/customer/:host/:customer",async(req,res,next)=>{
         if(updatedHost) return res.json({"message":"Record Deletion successful"})
     }
     catch(er) {
+        next(er);
+    }
+})
+
+
+router.get("/formEmail/:target",async(req,res,next)=>{
+    try{
+        let target = req.params.target;
+        let keyword = req.body.keyword;
+        let sendMail = await formService.sendFileAccToForm(keyword,target);
+        if(sendMail) return res.json(sendMail)
+    }
+    catch(er){
         next(er);
     }
 })
