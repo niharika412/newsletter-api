@@ -4,6 +4,12 @@ let dlServices={}
 
 dlServices.setHost= async(hostname)=>{
     let distDB = await collect.getDistributionList();
+    let alreadyInList = await dlServices.getDL(hostname);
+    if(alreadyInList){
+        let err= new Error("This account is already in the database. Please update or delete.");
+        err.status = 500;
+        throw err;
+    }
     let setHostName = await distDB.create(hostname);
     if(setHostName) return true;
     else{
@@ -26,6 +32,12 @@ dlServices.getDL = async(hostObj)=>{
 
 dlServices.addToDL = async(mailID,host)=>{
     let distDB = await collect.getDistributionList();
+    let alreadyInList = await dlServices.getDL({"hostName":host});
+    if(alreadyInList){
+        let err= new Error("This account is not in the database.");
+        err.status = 500;
+        throw err;
+    }
     let added = await distDB.updateOne({"hostName":host},{$push:{"distributionList":mailID}});
     if(added) return added;
     else{
@@ -40,6 +52,11 @@ dlServices.updateHost = async(oldHost, newHost)=>{
     let distDB = await collect.getDistributionList();
     let updated = await distDB.updateOne({"hostName":oldHost},{$set:{"hostName":newHost}})
     if(updated.nModified==1) return updated;
+    else if(updated.nModified==0){
+        let err = new Error("No such host in distribution list");
+        err.status = 500;
+        throw err;
+    }
     else{
         let err = new Error("Record not found");
         err.status = 500;

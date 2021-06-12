@@ -72,7 +72,7 @@ router.put("/hostNames/:oldHost/:newHost", async(req,res,next)=>{
         let oldHost = req.params.oldHost;
         let newHost = req.params.newHost;
         let updateHost = await dLServices.updateHost(oldHost,newHost);
-        if(updateHost) return res.json(updateHost)
+        if(updateHost) return res.json({"message":"Host is successfully updated."})
     }
     catch(er){
         next(er);
